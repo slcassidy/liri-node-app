@@ -129,7 +129,7 @@ const spotify = new Spotify(keys.spotify);
 
      * The album that the song is from
 
-   * If no song is provided then your program will default to "What's My Age Again" by blink-182.
+   * If no song is provided then your program will default to "What's My Age Again" by blink-182. ***NEED TO ADD**
 
    * You will utilize the [node-spotify-api](https://www.npmjs.com/package/node-spotify-api) package in order to retrieve song information from the Spotify API.
 
@@ -158,7 +158,7 @@ const spotify = new Spotify(keys.spotify);
        * Actors in the movie.
      ```
 
-   * If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
+   * If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.' **NEED to ADD**
 
      * If you haven't watched "Mr. Nobody," then you should: <http://www.imdb.com/title/tt0485947/>
 
@@ -166,7 +166,7 @@ const spotify = new Spotify(keys.spotify);
 
    * You'll use the Axios package to retrieve data from the OMDB API. Like all of the in-class activities, the OMDB API requires an API key. You may use `trilogy`.
 
-4. `node liri.js do-what-it-says`
+4. `node liri.js do-what-it-says` ****NEED TO DO***
 
    * Using the `fs` Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
 
