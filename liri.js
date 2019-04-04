@@ -1,6 +1,7 @@
 // Grab the package...
 const axios = require('axios');
 // const inquirer = require('inquirer');
+const fs = require('fs');
 
 
 require('dotenv').config();
@@ -13,6 +14,7 @@ if (process.argv.length > 2){
    view += `${process.argv[i]}`
   }
 }
+
 // console.log(view)
 const searchType = process.argv[2];
 
@@ -20,6 +22,8 @@ if(searchType === `movie-this` && !view){
   view = "Mr Nobody"
 }else if(searchType === `spotify-this-song` && !view) {
  view = "What's My Age Again"
+}else{
+  view = view
 }
 
 
@@ -56,6 +60,8 @@ const movie = function(){
     // If the request was successful...
     if (response.status === 200) {    
       movieInfo();
+      view = ""
+     
     }    
   }); //Edn of axios
 }//End of Then function
@@ -89,6 +95,7 @@ const band = function(){
     // If the request was successful...
     if (response.status === 200) {  
         bandInfo();
+        view = "";
     }    
   }); //Edn of axios
 }//End of Then function
@@ -103,7 +110,7 @@ const spot = function (view){
     secret: process.env.SPOTIFY_SECRET  
   });
   // console.log (spotify);
-  // console.log(view)
+  console.log(view);
    
   spotify.search({ type: 'track', query: `${view}`})
   
@@ -116,6 +123,7 @@ const spot = function (view){
     console.log(`Name of Song: ${song}`);
     console.log(`Preview Link: ${link}`);
     console.log(`Album: ${album}`);
+    view = "";
   
    
     })
@@ -131,10 +139,9 @@ const spot = function (view){
 
   // Includes the FS package for reading and writing packages
 
-const doit = function(searchType, view){
+const doit = function(view){
 
-// Running the readFile module that's inside of fs.
-// Stores the read information into the variable 'data'
+// get information
 fs.readFile('random.txt', 'utf8', function(err, data) {
   if (err) {
     return console.log(err);
@@ -143,18 +150,19 @@ fs.readFile('random.txt', 'utf8', function(err, data) {
   // Break the string down by comma separation and store the contents into the output array.
   const output = data.split(',');
 
-  searchType = output[0];
+  // searchType = output[0];
   view = output[1];
-  // console.log(view);
-  // console.log(searchType);
+  console.log(view);
+  console.log(searchType);
   spot(view);
+  // view = "";
 
 });
 }
 
 // write to file
 const logInfo = function () {
-  const fs = require('fs');
+
   // We will add the value to the bank file.
   fs.appendFile('log.txt', `${searchType}`, function(err) {
     if (err) {
@@ -162,18 +170,18 @@ const logInfo = function () {
     }
   });
 
-  // fs.appendFile('log.txt', `${view} ,`, function(err) {
-  //   if (err) {
-  //     return console.log(err);
-  //   }
-  // });
+  fs.appendFile('log.txt', `, "${view}" ,`, function(err) {
+    if (err) {
+      return console.log(err);
+    }
+  });
   // We will then print the value that was added (but we wont print the total).
-  console.log(`Info on log ${searchType} & ${view}.`);
+  // console.log(`Info on log ${searchType} & ${view}.`);
 }
 
 
 // Case switch to identify which API to call
-logInfo();
+
 
 switch(searchType){
   case `movie-this`:
@@ -183,7 +191,7 @@ switch(searchType){
   band();
   break;
   case 'spotify-this-song':
-  spot();
+  spot(view);
   break;
   case 'do-what-it-says':
   doit();
@@ -192,6 +200,6 @@ switch(searchType){
   console.log ("Not Available")
 };
 
-
+logInfo();
 
 
