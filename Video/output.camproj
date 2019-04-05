@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<Project_Data Version="8.00">
+<Project_Settings>
+<ProfileName></ProfileName>
+<ProjectWidth>0</ProjectWidth>
+<ProjectHeight>0</ProjectHeight>
+<IsCustomProject>1</IsCustomProject>
+<SavedProjectSettings>0</SavedProjectSettings>
+<LastFlashTemplate>-1</LastFlashTemplate>
+</Project_Settings>
+
+
+<AutoSaveFile>C:\Users\saman\AppData\Local\TechSmith\Camtasia Studio\8.0\Auto-Saves\output39ab4e5f.autosave.camproj</AutoSaveFile>
+
+<ProjectID>9F31305C-800B-4499-BE57-E6BBB4BA30A9</ProjectID>
+
+<PowerPointProject>0</PowerPointProject>
+
+<PowerPointFilename></PowerPointFilename>
+
+
+<Project_Notes>
+</Project_Notes>
+
+<Project_MetaData>
+<Project_MetaData_Object>
+<FieldArrayKey>8</FieldArrayKey>
+<Value>output</Value>
+</Project_MetaData_Object>
+<Project_MetaData_Object>
+<FieldArrayKey>13</FieldArrayKey>
+<Value>2019-04-04 10:26:10 PM</Value>
+</Project_MetaData_Object>
+<Project_MetaData_Object>
+<FieldArrayKey>16</FieldArrayKey>
+<Value>ENU</Value>
+</Project_MetaData_Object>
+</Project_MetaData>
+
+<CSMLData>
+<GoProject id="1" version="3.0" >
+ <Project id="2" editRate="30/1" version="3.0" >
+  <Author></Author>
+  <Comment></Comment>
+  <System></System>
+  <SourceBin id="3"  />
+  <Timeline id="4"  >
+   <Attributes>
+    <Attribute id="5" value="800" name="width"/>
+    <Attribute id="6" value="600" name="height"/>
+    <Attribute id="7" value="(0,0,0,255)" name="backgroundColor"/>
+   </Attributes>
+    <GenericMixer id="8"  name="Unified Mixer">
+     <MetaData>
+      <entry key="MixerType" val="TimelineMixer"/>
+     </MetaData>
+     <Tracks>
+      <GenericTrack id="9"  >
+       <Attributes>
+        <Attribute id="10" value="" name="ident"/>
+        <Attribute id="11" value="0" name="audioMuted"/>
+        <Attribute id="12" value="0" name="videoHidden"/>
+       </Attributes>
+       <MetaData>
+        <entry key="IsLocked" val="False"/>
+        <entry key="WinTrackHeight" val="62"/>
+       </MetaData>
+       <Medias>
+       </Medias>
+      </GenericTrack>
+      <GenericTrack id="13"  >
+       <Attributes>
+        <Attribute id="14" value="" name="ident"/>
+        <Attribute id="15" value="0" name="audioMuted"/>
+        <Attribute id="16" value="0" name="videoHidden"/>
+       </Attributes>
+       <MetaData>
+        <entry key="IsLocked" val="False"/>
+        <entry key="WinTrackHeight" val="62"/>
+       </MetaData>
+       <Medias>
+       </Medias>
+      </GenericTrack>
+     </Tracks>
+    </GenericMixer>
+   <CaptionAttributes id="17"  >
+    <Attribute id="18" value="1" name="captionsEnabled"/>
+    <Attribute id="19" value="Arial" name="captionsFontName"/>
+    <Attribute id="20" value="11" name="captionsFontSize"/>
+    <Attribute id="21" value="(0,0,0,255)" name="captionsBackgroundColor"/>
+    <Attribute id="22" value="(255,255,255,255)" name="captionsForegroundColor"/>
+    <Attribute id="23" value="en" name="lang"/>
+    <Attribute id="24" value="0" name="captionsAlignment"/>
+    <Attribute id="25" value="1" name="captionsDefaultFontSize"/>
+    <Attribute id="26" value="0.5" name="captionsOpacity"/>
+    <Attribute id="27" value="1" name="captionsBackgroundEnabled"/>
+    <Attribute id="28" value="1" name="captionsBackgroundOnlyAroundText"/>
+   </CaptionAttributes>
+   <Parameters>
+    <VectorParam id="29"  name="eyePosition">
+     <InterpolatingParam id="30" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="31" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="32" interp="linr"  time="0/1" value="3000" leadInLength="0/1"  />
+    </VectorParam>
+    <VectorParam id="33"  name="eyeLookAtPosition">
+     <InterpolatingParam id="34" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="35" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="36" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+    </VectorParam>
+    <VectorParam id="37"  name="eyeUpVector">
+     <InterpolatingParam id="38" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="39" interp="linr"  time="0/1" value="1" leadInLength="0/1"  />
+     <InterpolatingParam id="40" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+    </VectorParam>
+    <InterpolatingParam id="41" interp="linr"  time="0/1" value="0" leadInLength="0/1"  name="fov"/>
+    <InterpolatingParam id="42" interp="linr"  time="0/1" value="1.5" leadInLength="0/1"  name="nearClipDistance"/>
+    <InterpolatingParam id="43" interp="linr"  time="0/1" value="6000" leadInLength="0/1"  name="farClipDistance"/>
+   </Parameters>
+  </Timeline>
+ </Project>
+</GoProject>
+</CSMLData>
+
+</Project_Data>

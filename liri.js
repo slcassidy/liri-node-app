@@ -41,7 +41,8 @@ const movie = function(){
     const actors = response.data.Actors
     const IMDB = response.data.imdbRating
     // need to fix rotten tomatoes
-    const rotten = response.data.Ratings[2].source
+    // const rotten = response.data
+    const rotten = response.data.Ratings[1].Value
     const lang = response.data.Language
     const plot = response.data.Plot
 
@@ -110,7 +111,7 @@ const spot = function (view){
     secret: process.env.SPOTIFY_SECRET  
   });
   // console.log (spotify);
-  console.log(view);
+  // console.log(view);
    
   spotify.search({ type: 'track', query: `${view}`})
   
@@ -152,8 +153,8 @@ fs.readFile('random.txt', 'utf8', function(err, data) {
 
   // searchType = output[0];
   view = output[1];
-  console.log(view);
-  console.log(searchType);
+  // console.log(view);
+  // console.log(searchType);
   spot(view);
   // view = "";
 
